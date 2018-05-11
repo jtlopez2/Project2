@@ -1,0 +1,49 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Smart Contracts</h2>
+  <p>Using Blockchain to modernize contracts.</p>
+</div>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a class ="active" href="javascript:void(0)">Issues</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+<div class="content">
+  <h3>Known Vulnerabilities</h3>
+  <p>One of the biggest points of vulnerability for smart contracts lies in their reliance on a digital wallet to maintain ownership of a transaction or entry in the blockchain ledger.  This wallet offers the ability to digitally sign, verify, and verify previous signings of other documents.  If another party were to gain access or control of this wallet, any and all contracts signed using the wallet could be compromised or transfered to other owners.</p>
+  <p>Many wallets can be created with features or extensions that allow access or ease of use for users which may also compromise the security of the wallet itself.  As with most digital security, there is always a trade off between security and convenience.  Not keeping the private key secured, using out of date software, or software with known vulnerabilities, zero day attacks, and social engineering are all possible attack vectors for access to a person’s wallet.</p>
+  <p>To give a simple real world example:  If the deed to your house were recorded via a smart contract signed by your wallet and you were to lose control of that wallet, it is the same as losing the deed to your house.  Whoever gained access to your wallet could then sell or even give the ownership of your home to another wallet, say one that they also owned, or simply keep the profit from the sale.</p>
+  <p>This is a rather extreme example of a worst case scenario and there are solutions that can be implemented, such as third party verifications for large transactions, waiting periods on large transactions, or even two or three factor authentication required for transactions.  However, the example still shows that by relying on digital security, a user will always be opening themselves up to digital vulnerabilities.</p>
+  <p>There is also the issue that because these smart contracts are digital, they rely on the codebase of many intermediary providers.  From the contract management itself, to the codebase of the blockchain, to the code managing how the contract is interpreted as a digital document.  This means that all software providing parties must be very transparent and reliable in order to reduce any fears of dishonesty in the generation of these contracts.  It is true that traditional contracts also required many levels of trust, from trust in the authors, to trust in oneself, or an attorney to accurately interpret the contract, as well as trust in a notary to have the contract verified, so while these vulnerabilities are not new to smart contracts, they do still exist.</p>
+  <p>With these vulnerabilities in mind it is important to remember that many of these issues face modern security of all types.  From bank accounts, retirement accounts, credit cards, passwords, social security numbers, all of these things are able to be compromised and there is no such thing as a complete guarantee of security.  Digitizing these things does open them up to a larger pool of potential attackers but it can also offer unique security solutions.</p>
+  <br>
+  <h3>Current Legal Status and Laws</h3>
+  <p>With certain smart contracts, such as those written using Ethereum, there are many legal caveats that are still to be overcome.  Some of these issues are being handled at the state level.  The issue presently is not that current smart contracts and blockchain signatures are not legal, but rather that there is no legal precedence surrounding these things yet.  Because of the lack of legal support or precedent many parties are reluctant to begin relying upon blockchain for contracts and signatures least they become a watershed case that rules against their favor.  </p>
+  <p>Several states are trying to put ground rules in place surrounding these new ways of authoring and verifying contracts however.  States such as Arizona and Vermont are taking proactive stances towards putting clear legal definitions in place.  Arizona recently had a state bill proposed to recognize the <a href="https://legiscan.com/AZ/text/HB2417/id/1497439" target="new_window">“validity or enforceability”</a> of a smart contract.  Similarly, vermont has put forth a bill that <a href="https://www.coindesk.com/arizona-bill-blockchain-smart-contracts/" target="new_window">“would make blockchain records admissible as evidence in court”.</a></p>
+  <p>Because the legal groundwork is still being described on case by case and state by state bases there may be valid concerns about leaning too heavily on smart contracts for major agreements at present, though as the legal landscape changes the options available to users will change with it.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
